@@ -36,11 +36,10 @@
     padding: 6px;
 }
 
-.card-body p,
-.card-body h6 {
+.card-body p {
     margin-bottom: 0;
 }
 
-.card-boyd h5 {
+.card-boyd h6 {
     margin-bottom: 1rem;
 }
