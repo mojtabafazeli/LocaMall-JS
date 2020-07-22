@@ -2,6 +2,12 @@
     position: sticky;
     top: 0;
     z-index: 999;
+    background-color: #7952b3;
+}
+
+.bd-navbar .navbar-nav .nav-link,
+.navbar-brand {
+    color: white;
 }
 
 .container {
@@ -11,6 +17,15 @@
 
 .form-check {
     position: relative;
+}
+
+.form-inline .form-check {
+    max-width: 5rem;
+}
+
+input[type="search"] {
+    box-sizing: border-box;
+    min-width: 272px;
 }
 
 .form-check-inline .form-check-input {
@@ -30,6 +45,11 @@
 .form-check-label {
     max-width: 5rem;
     min-width: 5rem;
+}
+
+.pop-in-loc,
+.pop-in-town {
+    max-width: 80%;
 }
 
 .card-body {
