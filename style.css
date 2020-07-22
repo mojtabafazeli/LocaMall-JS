@@ -4,11 +4,43 @@
     z-index: 999;
 }
 
-.form-check-input {
+.container {
+    max-width: 1140px;
+    min-width: 576px;
+}
+
+.form-check {
+    position: relative;
+}
+
+.form-check-inline .form-check-input {
+    position: absolute;
     visibility: hidden;
+}
+
+.search-button {
+    max-width: 72px;
 }
 
 .form-check-input:checked+label {
     color: white;
     background-color: #007bff;
+}
+
+.form-check-label {
+    max-width: 5rem;
+    min-width: 5rem;
+}
+
+.card-body {
+    padding: 6px;
+}
+
+.card-body p,
+.card-body h6 {
+    margin-bottom: 0;
+}
+
+.card-boyd h5 {
+    margin-bottom: 1rem;
 }
