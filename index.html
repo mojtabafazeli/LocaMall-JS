@@ -3,70 +3,129 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="min-width=device-min-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <nav role="navigation" class="navbar navbar-expand-sm navbar-light bg-light flex-column flex-sm-row bd-navbar">
-        <a class="navbar-brand mr-3" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a href="#" class="nav-link">Home<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Catalog</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">About us</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Contact us</a>
-                </li>
-            </ul>
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link">Sign up</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link">Sign in</a>
-                </li>
-            </ul>
+    <div class="container">
+        <nav role="navigation"
+            class="navbar navbar-expand-md navbar-light bg-light flex-column flex-sm-row bd-navbar mt-1">
+            <a class="navbar-brand mr-3" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Catalog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact us</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link">Sign up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Sign in</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="search mt-4">
+            <form action="search.php" class="form-inline col-9 justify-content-around mx-auto">
+                <div class="row col-10 flex-nowrap">
+                    <input class="form-control col-10" type="search" placeholder="search...">
+                    <button class="btn btn-outline-success col-2 ml-1" type="submit">Search</button>
+                </div>
+                <div class="row mt-2 flex-nowrap">
+                    <div class="form-check form-check-inline">
+                        <input type="radio" class="form-check-input" name="search-option" id="search-all" value="all"
+                            checked>
+                        <label class="form-check-label btn btn-outline-primary py-0"
+                            for="search-all">all</label></button>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" class="form-check-input" name="search-option" id="search-product"
+                            value="all">
+                        <label class="form-check-label btn btn-outline-primary py-0"
+                            for="search-product">Product</label>
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" class="form-check-input" name="search-option" id="search-service"
+                            value="service"><label class="form-check-label btn btn-outline-primary py-0"
+                            for="search-service">Service
+                        </label>
+                    </div>
+                </div>
+            </form>
+
         </div>
-    </nav>
-    <div class="search mt-4">
-        <form action="search.php" class="form-inline col-9 justify-content-around mx-auto">
-            <div class="row col-10 flex-nowrap">
-                <input class="form-control col-10" type="search" placeholder="search...">
-                <button class="btn btn-outline-success col-2" type="submit">Search</button>
+
+        <div class="container p-0 mt-5 overflow-hidden">
+            <h5 class="mb-3 font-weight-bold">Popular in your local</h5>
+            <div id="pop-in-loc" class="row m-0 justify-content-start flex-nowrap">
+                <div class="card mr-3" style="min-width: 150px;"></img>
+                    <img src="" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <p class="card-text text-center">Name Name</p>
+                    </div>
+                </div>
+                <div class="card mx-3" style="min-width: 150px;"></img>
+                    <img src="" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <p class="card-text text-center">Name Name</p>
+                    </div>
+                </div>
+                <div class="card mx-3" style="min-width: 150px;"></img>
+                    <img src="" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <p class="card-text text-center">Name Name</p>
+                    </div>
+                </div>
+                <div class="card mx-3" style="min-width: 150px;"></img>
+                    <img src="" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <p class="card-text text-center">Name Name</p>
+                    </div>
+                </div>
+                <div class="card mx-3" style="min-width: 150px;"></img>
+                    <img src="" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <p class="card-text text-center">Name Name</p>
+                    </div>
+                </div>
+                <div class="card ml-3" style="min-width: 150px;"></img>
+                    <img src="" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <p class="card-text text-center">Name Name</p>
+                    </div>
+                </div>
             </div>
-            <div class="row mt-2 flex-nowrap">
-                <div class="form-check form-check-inline">
-                    <input type="radio" class="form-check-input" name="search-option" id="search-all" value="all">
-                    <label class="form-check-label btn btn-outline-primary py-0" for="search-all">all</label></button>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input type="radio" class="form-check-input" name="search-option" id="search-product" value="all">
-                    <label class="form-check-label btn btn-outline-primary py-0" for="search-product">Product</label>
-                    </label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input type="radio" class="form-check-input" name="search-option" id="search-service"
-                        value="service"><label class="form-check-label btn btn-outline-primary py-0"
-                        for="search-service">Service
-                    </label>
-                </div>
-            </div>
-        </form>
+        </div>
 
     </div>
+
+
+
+
+
+
+
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
         </script>
