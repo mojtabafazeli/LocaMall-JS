@@ -62,7 +62,8 @@ input[type="search"] {
 
 .pop-in-loc,
 .pop-in-town,
-.story {
+.story,
+.ad {
     max-width: 80%;
 }
 
@@ -98,4 +99,12 @@ input[type="search"] {
 blockquote {
     color: #34383b;
     font-size: 1.2rem;
+}
+
+a {
+    color: #7952b3;
+}
+
+.ad * {
+    margin-right: 20%;
 }
