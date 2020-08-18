@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="min-width=device-min-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container bg-light px-0">
+        <nav role="navigation" class="navbar navbar-expand-md navbar-light bd-navbar text-white">
+            <a class="navbar-brand text-white mr-3" href="index.html">LocaMall</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link">Sign up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Sign in</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Catalog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="search mt-3 pt-3 pb-4">
+            <form action="search.php" class="form-inline col-9 justify-content-center mx-auto">
+                <div class="row col-10 flex-nowrap">
+                    <input class="form-control col-9 col-md-10" type="search" placeholder="search...">
+                    <button class="search-button btn btn-outline-success col-3 col-md-2 ml-1"
+                        type="submit">Search</button>
+                </div>
+            </form>
+
+        </div>
+        <div class="d-flex my-3">
+            <div class="col-2">
+                <div class="col-12 border">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla tempora praesentium accusamus
+                        provident. Ut cupiditate saepe aliquid quos reprehenderit asperiores eum deleniti suscipit non
+                        omnis. Excepturi iste officia quae? Consequatur nostrum neque, cupiditate laboriosam possimus
+                        perferendis! Animi nesciunt odit incidunt corporis aperiam dolore blanditiis alias asperiores.
+                        Minus rerum libero iste blanditiis repudiandae.</p>
+                </div>
+            </div>
+            <div class="col-10 d-flex pr-3 flex-wrap align-content-start justify-content-start">
+                <div class="col-6 mr-0 p-0 form-check-inline">
+                    <input type="radio" class="col-12 form-check-input" name="search-option" id="sellers"
+                        value="sellers" checked>
+                    <label class="col-12 m-0 py-2" for="sellers">Sellers</label>
+                </div>
+                <div class="col-6 mr-0 p-0 form-check-inline">
+                    <input type="radio" class="form-check-input" name="search-option" id="products" value="products">
+                    <label class="col-12 m-0 py-2" for="products">Products</label>
+                </div>
+                <div class="col-12 border">
+                    <p>This is test</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
