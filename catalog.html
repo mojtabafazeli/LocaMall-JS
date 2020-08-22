@@ -10,9 +10,13 @@
 </head>
 
 <body>
-
+    <a id="skippy" class="sr-only sr-only-focusable" href="#content">
+        <div class="container">
+            <span class="skiplink-text">Skip to main content</span>
+        </div>
+    </a>
     <div class="container bg-light px-0">
-        <nav role="navigation" class="navbar navbar-expand-md navbar-light bd-navbar text-white">
+        <nav role="navigation" aria-label="main menu" class="navbar navbar-expand-md navbar-light bd-navbar text-white">
             <a class="navbar-brand text-white mr-3" href="index.html">LocaMall</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,7 +67,7 @@
                         Minus rerum libero iste blanditiis repudiandae.</p>
                 </aside>
             </div>
-            <div class="col-10 d-flex pr-3 flex-wrap align-content-start justify-content-start">
+            <div id="content" class="col-10 d-flex pr-3 flex-wrap align-content-start justify-content-start">
                 <div class="col-6 mr-0 p-0 form-check-inline">
                     <input type="radio" class="col-12 form-check-input" name="search-option" id="sellers"
                         value="sellers" checked>

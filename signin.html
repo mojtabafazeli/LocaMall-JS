@@ -10,9 +10,15 @@
 </head>
 
 <body>
+    <a id="skippy" class="sr-only sr-only-focusable" href="#content">
+        <div class="container">
+            <span class="skiplink-text">Skip to main content</span>
+        </div>
+    </a>
     <div class="container bg-light px-0">
         <header>
-            <nav role="navigation" class="navbar navbar-expand-md navbar-light bd-navbar text-white">
+            <nav role="navigation" aria-label="main menu"
+                class="navbar navbar-expand-md navbar-light bd-navbar text-white">
                 <a class="navbar-brand text-white mr-3" href="index.html">LocaMall</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -45,7 +51,7 @@
                 </div>
             </nav>
         </header>
-        <div class="col-5 mt-5 mx-auto">
+        <div id="content" class="col-5 mt-5 mx-auto">
             <h1>Sign in</h1>
             <form class="mt-3">
                 <div class="form-group">
