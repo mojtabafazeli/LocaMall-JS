@@ -25,10 +25,6 @@
     min-width: 576px;
 }
 
-.search {
-    position: sticky;
-}
-
 .form-check {
     position: relative;
 }
