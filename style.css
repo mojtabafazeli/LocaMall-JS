@@ -1,3 +1,4 @@
+/***********Global Rules***********/
 html {
     box-sizing: border-box;
     line-height: 1.5;
@@ -10,6 +11,28 @@ body {
     margin: 0;
 }
 
+input[type="search"] {
+    box-sizing: border-box;
+    min-width: 272px;
+}
+
+blockquote {
+    color: #34383b;
+    font-size: 1.2rem;
+}
+
+a {
+    color: #7952b3;
+}
+
+.container {
+    /* min-height: 100vh; */
+    max-width: 1140px;
+    min-width: 576px;
+}
+
+
+/***********header***********/
 .bd-navbar {
     position: sticky;
     top: 0px;
@@ -17,6 +40,13 @@ body {
     background-color: #7952b3;
 }
 
+.bd-navbar .navbar-nav .nav-link,
+.navbar-brand {
+    color: white;
+}
+
+
+/***********search***********/
 .search {
     position: sticky;
     top: 40px;
@@ -26,17 +56,12 @@ body {
     box-shadow: 0 1px rgba(0, 0, 0, 0.05);
 }
 
-.bd-navbar .navbar-nav .nav-link,
-.navbar-brand {
-    color: white;
+.search-button {
+    max-width: 72px;
 }
 
-.container {
-    /* min-height: 100vh; */
-    max-width: 1140px;
-    min-width: 576px;
-}
 
+/***********form***********/
 .form-check {
     position: relative;
 }
@@ -45,18 +70,9 @@ body {
     max-width: 5rem;
 }
 
-input[type="search"] {
-    box-sizing: border-box;
-    min-width: 272px;
-}
-
 .form-check-inline .form-check-input {
     position: absolute;
     visibility: hidden;
-}
-
-.search-button {
-    max-width: 72px;
 }
 
 .form-check-input:checked+label {
@@ -69,6 +85,8 @@ input[type="search"] {
     min-width: 5rem;
 }
 
+
+/***********index-main***********/
 .pop-in-loc,
 .pop-in-town,
 .story,
@@ -103,15 +121,6 @@ input[type="search"] {
     position: absolute;
     z-index: 999;
     background-color: #f8f9fa;
-}
-
-blockquote {
-    color: #34383b;
-    font-size: 1.2rem;
-}
-
-a {
-    color: #7952b3;
 }
 
 .ad * {
