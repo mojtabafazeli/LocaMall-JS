@@ -3,12 +3,21 @@ html {
     box-sizing: border-box;
     line-height: 1.5;
     direction: ltr;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
 body {
     min-height: 100%;
     background: #fff;
     margin: 0;
+    background-color: #f8f9fa !important;
+    overflow-x: hidden;
 }
 
 input[type="search"] {
@@ -48,8 +57,8 @@ a {
 
 /***********search***********/
 .search {
-    position: sticky;
-    top: 40px;
+    /* position: sticky; */
+    /* top: 40px; */
     bottom: 0px;
     z-index: 999;
     background-color: #f8f9fa;
